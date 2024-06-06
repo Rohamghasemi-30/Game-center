@@ -1,0 +1,476 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body.body-game-first {
+    background-image: url(../image/game-rock.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    height: 650px;
+    width: 100%;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-image: url(../image/1\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px 0px 20px;
+
+}
+
+.first-li a{
+    color: #000;
+}
+
+.container-home{
+    width: 100%;
+    padding: 100px 0px 0px 80px;
+}
+.container-home h1 {
+    padding-left: 60px;
+text-align: justify;
+}
+
+.container-home .btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-home  .btn a{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(255,255 ,255 ,0.1 );
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 30px;
+      padding: 10px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      overflow: hidden;
+      color: #fff;
+      z-index: 1;
+      transition: 0.5s;
+      backdrop-filter: blur(15px);
+  }
+  
+  .container-home  .btn:hover a{
+      letter-spacing: 3px;
+  }
+  
+  .container-home  .btn a::before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(to left, rgba( 255, 255, 255, 0.15));
+      transform: skewX(45deg) translate(0);
+      transition: 0.5s;
+  }
+  
+  .container-home  .btn:hover a::before{
+      transform: skewX(45deg) translate(200px);
+  } 
+  
+  .container-home .btn::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+  }
+  
+  .container-home .btn:hover::before{
+      bottom: 0;
+      height: 50%;
+      width: 80%;
+      border-radius: 30px;
+  }
+  
+  .container-home .btn::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -5px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+  }
+  
+  .container-home .btn:hover::after{
+      top: 0;
+      height: 50%;
+      width: 80%;
+      border-radius: 30px;
+  }
+  
+  
+  .container-home .btn:nth-child(1)::before,
+  .container-home .btn:nth-child(1)::after{
+  background: #ff1f71;
+  box-shadow: 0 0 5px #ff1f71,0 0 15px #ff1f71,0 0 30px #ff1f71,0 0 60px #ff1f71;
+  }
+  
+  .box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+main.main-game-first{
+    width: 100%;
+    height: 100%;
+    display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+li:hover{
+    border-bottom: red 2px solid;
+    transition: all 0.5s;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.3;
+}
+
+a:hover{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.text-home a{
+    opacity: 1;
+}
+
+.game{
+    background-color: #ffffff07;
+    height: 500px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+   
+}
+
+.list-game-body{
+    background-image: url(../image/yellow-green-abstract.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.list-text a{
+    opacity: 1;
+}
+
+
+h1.text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styles */
+.form {
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input{
+    background-color: #28a745;
+    color: #fff;
+}
+
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    width: 50%;
+    background-color: #7E8EF1;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+.points{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+    gap: 15px;
+
+}
+
+.container-list{
+    display: flex;
+    justify-content: space-around;
+   flex-wrap: wrap;
+    flex-direction: column;
+    height: 500px;
+}
+
+.container-list-games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+.container-list-games img {
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+  
+
+
+  .container-list-games button a {
+text-decoration: none;
+color: #fff;
+  }
+
+
+
+  .about-body{
+    background-image: url(../image/abstract-yellow-light-silver-grey-metal-black-cyber-futuristic-technology-geometric-design-modern-background-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  
+.about-box{
+    width: 20%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+.container-about{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about{
+    background-color: #007bff2a;
+    color: #fff;
+    width:80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.about p {
+    width: 50%;
+}
+
+.about-text a{
+    opacity: 1;
+}
+
+
+
+
+
+
+body.guess-number-body {
+    font-family: Arial, sans-serif;
+    background-image: url(../image/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  
+  h1.text-guess {
+    color: #fff;
+  }
+  
+  .form-guess {
+    margin-top: 20px;
+  }
+  
+  input.input-guess {
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+  }
+  
+  input.btn-guess {
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input.btn-guess:hover {
+    background-color: #0056b3;
+  }
+  
+  .result-guess {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #28a745;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  
+.color-text{
+    font-size: 18px;
+    color: #d9ff00;
+}
+
+.color-text-Ratings{
+    color: #28a745;
+}
+
+
+.ratings-body{
+    background-image: url(../image/pngtree-rainbow-curves-abstract-colorful-background-image_2164067.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-Ratings a{
+    opacity: 1;
+}
+
+.box-ratings{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box-text-ratings{
+width: 80%;
+height: 80%;
+background-color: #90acca70;
+border-radius: 25px;
+box-shadow: #748ba570 3px 6px 7px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+}
+
+.ratings-box-firstgame{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    background-color: #7e8df18f;
+    border-radius: 25px;
+}
